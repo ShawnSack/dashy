@@ -31,7 +31,7 @@ appConfig:
   showSplashScreen: false
   preventWriteToDisk: false
   preventLocalSave: false
-  disableConfiguration: false
+  disableConfiguration: true
   disableConfigurationForNonAdmin: false
   allowConfigEdit: true
   enableServiceWorker: false
