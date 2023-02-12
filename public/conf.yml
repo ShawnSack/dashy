@@ -1,15 +1,7 @@
-pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
-  navLinks:
-    - title: GitHub
-      path: https://github.com/Lissy93/dashy
-    - title: Documentation
-      path: https://dashy.to/docs
 appConfig:
-  theme: material-dark
+  theme: nord-frost
   layout: auto
-  iconSize: medium
+  iconSize: large
   language: en
   startingView: default
   defaultOpeningMethod: newtab
@@ -25,7 +17,7 @@ appConfig:
     openingMethod: newtab
     searchBangs: {}
   enableFontAwesome: true
-  enableMaterialDesignIcons: false
+  enableMaterialDesignIcons: true
   hideComponents:
     hideHeading: false
     hideNav: false
@@ -47,12 +39,26 @@ appConfig:
   disableUpdateChecks: false
   disableSmartSort: false
   enableErrorReporting: false
+  customColors:
+    nord-frost:
+      primary: '#f5f5f5'
+      background: '#141b33'
+      background-darker: '#060913'
+pageInfo:
+  title: Gen 9 Hub
+  description: Start your day the Gen 9 Way!
+  navLinks:
+    - title: PayChex Flex
+      path: https://myapps.paychex.com/landing_remote/login.do
+      target: newtab
+  footerText: Made with Love, and javascript
+  logo: https://genixstoragemisc.blob.core.windows.net/gixfiles/green-g@2x.png
 sections:
   - name: Main
     icon: fas fa-rocket
     items:
       - title: Office 365
-        description: Access you email, calendar, and files
+        description: Access your email, calendar, and files
         icon: favicon
         url: https://office.com
         target: newtab
@@ -65,21 +71,22 @@ sections:
         id: 1_389_manage
       - title: Automate
         description: Manage and monitor computers and servers
-        icon: favicon
-        url: https://automate.generationix.com
+        icon: https://automate.generationix.com/automate/favicon.ico
+        url: https://automate.generationix.com/automate/
         target: newtab
         id: 2_389_automate
       - title: Control
         description: Quickly connect with end-users and servers
-        icon: favicon
+        icon: >-
+          https://control.generationix.com/FavIcon.axd?__Cache=15c5c1ba-435d-4b2e-95e9-9cd15a32cb4e
         url: https://control.generationix.com
-        target: newtab
+        target: null
         id: 3_389_control
       - title: ITGlue
         description: Client documentation and passwords
         icon: https://genix.itglue.com/favicon.ico
         url: https://genix.itglue.com
-        target: newtab
+        target: null
         id: 4_389_itglue
       - title: Thread Inbox
         description: Access the chat queue and respond to tickets
@@ -87,6 +94,18 @@ sections:
         url: https://inbox.getthread.com
         target: newtab
         id: 5_389_threadinbox
+      - title: Slack
+        description: Like AOL instant messenger for the current decade
+        icon: favicon
+        url: https://generationix.slack.com
+        target: newtab
+        id: 6_389_slack
+      - title: Zoom
+        description: Gotta go fast
+        icon: favicon
+        url: https://generationix.zoom.us
+        target: newtab
+        id: 7_389_zoom
     displayData:
       sortBy: default
       rows: 1
@@ -120,6 +139,11 @@ sections:
         url: https://cloudflare.com
         target: newtab
         id: 2_1064_cloudflare
+      - title: Subnet Calculator
+        description: Cheat tool for subnetting
+        icon: favicon
+        url: https://www.calculator.net/ip-subnet-calculator.html
+        id: 3_1064_subnetcalculator
   - name: Security
     icon: fas fa-shield
     displayData:
@@ -131,7 +155,7 @@ sections:
     items:
       - title: Sophos Central
         description: Anti-virus and firewall management
-        icon: favicon
+        icon: https://d2y1fnwu0z0lk0.cloudfront.net/2023.07b/650/images/favicon.ico
         url: https://partnerportal.sophos.com/
         target: newtab
         id: 0_856_sophoscentral
@@ -147,3 +171,107 @@ sections:
         url: https://partner.vadesecure.com/
         target: newtab
         id: 2_856_vade
+      - title: Netskope
+        description: Secure Edge Gateway
+        icon: favicon
+        url: https://generationix.goskope.com
+        target: newtab
+        id: 3_856_netskope
+      - title: Perch
+        description: Security Logs
+        icon: favicon
+        url: https://access.perchsecurity.com/
+        target: newtab
+        id: 4_856_perch
+      - title: Proofpoint
+        description: Yet another spam filter
+        icon: favicon
+        url: https://us1.proofpointessentials.com/
+        target: newtab
+        id: 5_856_proofpoint
+      - title: Cisco Umbrella (OpenDNS)
+        description: DNS security
+        icon: favicon
+        url: https://dashboard.umbrella.com/msp/130807
+        target: newtab
+        id: 6_856_ciscoumbrellaopendns
+  - name: Backup & Disaster Recovery
+    icon: fas fa-upload
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Datto
+        description: Our most common BDR tool
+        icon: favicon
+        url: https://auth.datto.com/login
+        target: newtab
+        id: 0_2410_datto
+      - title: Backblaze
+        description: Backup for laptops and desktops
+        icon: favicon
+        url: https://backblaze.com
+        target: newtab
+        id: 1_2410_backblaze
+      - title: CloudAlly
+        description: Backup for Office 365 and GSuite
+        icon: favicon
+        url: https://partners.cloudally.com/
+        target: newtab
+        id: 2_2410_cloudally
+  - name: Management Tools
+    icon: fas fa-list-check
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: ScalePad (Warranty Master)
+        description: View device warranties
+        icon: favicon
+        url: https://app.scalepad.com/signin
+        target: newtab
+        id: 0_1582_scalepadwarrantymaster
+      - title: Printix
+        description: Cloud Printing
+        icon: favicon
+        url: https://partners.printix.net/
+        target: newtab
+        id: 1_1582_printix
+  - name: Education
+    icon: fas fa-school
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: ITProTV
+        description: IT Education Videos
+        icon: favicon
+        url: https://app.itpro.tv/login/
+        target: newtab
+        id: 0_924_itprotv
+      - title: Cybrary
+        description: Great training materials for security
+        icon: favicon
+        url: https://www.cybrary.it/
+        target: newtab
+        id: 1_924_cybrary
+      - title: Adam the Automator
+        description: A ton of greate tutorials and guides
+        icon: favicon
+        url: https://adamtheautomator.com/tutorials/
+        target: newtab
+        id: 2_924_adamtheautomator
+pages:
+  - name: 3 Arts
+    path: 3a.yml
+  - name: NCS
+    path: ncs.yml
