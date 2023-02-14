@@ -2,7 +2,7 @@
     "routes": [
         {
             "route": "/login",
-            "rewrite": "/.auth/login/aad?post_login_redirect_uri=.referrer",
+            "rewrite": "/.auth/login/aad?post_login_redirect_uri=https://hub.generationix.com",
             "allowedRoles": ["anonymous", "authenticated"]
           },
           {
